@@ -1,0 +1,95 @@
+page-score {
+
+}
+.vl {
+    border-left: 6px solid rgb(242,217,54);
+    height: auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    margin-top: 10px;
+    top: 6px;
+    padding-left:10px;
+    color: whitesmoke;
+}
+
+.v2{
+    border-right: 1px solid rgb(242,217,54);
+    height: auto;
+    position: absolute;
+    right: 50%;
+    margin-right: 3px;
+    margin-top: 10px;
+    top: 6px;
+    color: whitesmoke;
+   
+   
+}
+.c1
+{
+    background-color: red;
+    width: 130px;
+    height: 100px;
+    opacity: 0.7;
+  
+}
+
+.c1:hover , .c2:hover{
+    background-color: greenyellow;
+}
+
+.c2
+{
+    background-color: blue;
+    width: 130px;
+    height: 100px;
+    opacity: 0.7;
+   
+
+}
+.head{
+    font-size: 6em;
+    text-align: center;
+
+}
+.button1
+{
+    align-content: center;
+    margin-top:-4px;
+    width:150px;
+    margin-bottom:-4px;
+    margin-left: 50px;
+    background-color: #143c5d;
+
+}
+
+.button2{
+    align-content: center;
+    margin-top:-4px;
+    margin-left:-60px;
+ 
+    margin-bottom: -4px;
+    background-color: #143c5d;
+}
+.b{
+    text-align: center;
+
+}
+.button3
+{
+    
+    margin-top:-2px;
+    margin-bottom:-4px;
+    background-color: #143c5d;
+    margin-right: 36px;
+    text-align: centerl;
+}
+
+.co
+{
+    background-image: url('../../assets/imgs/ball2.jpg');
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}

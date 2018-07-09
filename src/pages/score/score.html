@@ -1,0 +1,75 @@
+<!--
+  Generated template for the ScorePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="yellcl">
+    <ion-title>SCORE BOARD</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content padding class="co" >
+
+  
+
+    <ion-grid >
+      <ion-row class="v2" *ngFor="let b of score">
+          <ion-col col-12  (click)="scorebox(1)">
+            <h1>HOME</h1>
+            <ion-label ><h4>{{b.namehome}}</h4></ion-label>
+            <ion-label class="c2"><h4 class="head">{{homescore}}</h4></ion-label>
+          </ion-col>
+          
+      </ion-row>
+        
+        <ion-row class="vl" *ngFor="let b of score">
+            <ion-col col-12 (click)="scorebox(2)" >
+                <h1>AWAY</h1>
+                <ion-label><h4>{{b.nameAway}}</h4></ion-label>
+                <ion-label class="c1"><h4 class="head">{{awayscore}}</h4></ion-label>
+                
+             </ion-col> 
+        </ion-row><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+         
+       <div class="b">
+      <ion-row>
+        <ion-col>
+            <button ion-button class="button1" (click)="addNumber(5)">TRY</button>
+        </ion-col>
+        <ion-col>
+            <button ion-button class="button2" (click)="descreseNumber(5)"><ion-icon name="undo"></ion-icon></button>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+            <button ion-button class="button1" (click)="addNumber(3)">PENALTY</button>
+        </ion-col>
+        <ion-col>
+            <button ion-button class="button2" (click)="descreseNumber(3)"><ion-icon name="undo"></ion-icon></button>
+        </ion-col>
+</ion-row>
+<ion-row>
+        <ion-col>
+            <button ion-button class="button1 " (click)="addNumber(2)">CONVERSION</button>
+        </ion-col>
+        <ion-col>
+            <button ion-button class="button2" (click)="descreseNumber(2)"><ion-icon name="undo"></ion-icon></button>
+        </ion-col>
+</ion-row>
+<ion-row>
+        <ion-col>
+            <button ion-button full round class="button3" (click)="reset()">RESET</button>
+        </ion-col>
+        
+
+      </ion-row>
+    </div>
+      </ion-grid>
+      
+</ion-content>

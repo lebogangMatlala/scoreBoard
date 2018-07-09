@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar color="yellcl">
+    <ion-title>
+      SCORE BOARD
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="co">
+
+    <ion-list>
+        <h1 class='ru'>RUGBY SA </h1> 
+        <div >
+        <ion-item class="inp">
+          <ion-label floating color="secondary"> HOME TEAM:</ion-label>
+          <ion-input type="text" color="white" class="p" #home></ion-input>
+        </ion-item>
+        <div class="inpt">
+          <img src='../../assets/imgs/ball2.jpg' class="img">
+          <div class="centered">VS</div>
+        </div>
+        <ion-item class="in">
+          <ion-label  floating color="secondary">AWAY TEAM</ion-label>
+          <ion-input type="text"  color="white" class="p" #away></ion-input>
+        </ion-item>
+        <br>
+        <br>
+      </div>
+        <button ion-button round full color="yellcl" (click)="goToBaord(home.value,away.value)" >START<ion-icon name="disc"></ion-icon></button>
+      </ion-list>
+ 
+</ion-content>

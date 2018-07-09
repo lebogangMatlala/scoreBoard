@@ -1,0 +1,68 @@
+page-home {
+
+}
+.ru{
+    font-family: fantasy;
+    font-size: 5em;
+    color: whitesmoke;
+}
+.co
+{
+    background-image: url('../../assets/imgs/ball2.jpg');
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+img{
+    border-radius: 50%;
+    width: 200px;
+    height: 150px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+input{
+    border: 1px solid blue;
+}
+.inp
+{
+    
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    color:whitesmoke;
+    margin-top: 5%;
+  
+}
+
+.in{
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    color:whitesmoke;
+    margin-top: 22%;
+}
+.p{
+    border-bottom: 2px solid;
+    
+    
+}
+
+.i{
+    border-bottom: 2px solid;
+    margin-top: -50%; 
+}
+.inpt{
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    color:whitesmoke; 
+    margin-bottom: -30%;
+}
+
+.centered {
+    position: relative;
+   top:10%;
+    left: 50%;
+    transform: translate(-50%, -130%);
+    font-family: fantasy;
+    font-size: 5em;
+    
+}
