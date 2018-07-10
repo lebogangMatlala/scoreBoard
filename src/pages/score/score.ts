@@ -166,9 +166,17 @@ descreseNumber(number)
 
     if(number==5)
     {
-      this.awayscore-=this.trypoint;
-      this.index=arrAway.length;
-      arrAway.splice(this.index-1,1);
+      for(var x=0;x<arrAway.length;x++)
+      {
+        if(arrAway[x].points == 5)
+        {
+           this.ind =x;
+           arrAway.splice(this.ind,1);
+           this.awayscore-=this.trypoint;
+           break;
+
+        }
+      }
       console.log(arrAway);
       if(this.awayscore < 0){
         this.awayscore = 0;
@@ -176,9 +184,15 @@ descreseNumber(number)
     }
     else if(number==3)
     {
-      this.awayscore-=this.penalty;
-      this.index=arrAway.length;
-      arrAway.splice(this.index-1,1);
+      for(var a=0;a<arrAway.length;a++)
+      {
+        if(arrAway[a].points == 3)
+        {
+        this.ind =a;
+        arrAway.splice(this.ind,1);
+        this.awayscore-=this.penalty;
+        }
+      }
       console.log(arrAway);
       if(this.awayscore < 0){
         this.awayscore = 0;
@@ -186,9 +200,17 @@ descreseNumber(number)
     }
     else if(number==2)
     {
-      this.awayscore-=this.conve;
-      this.index=arrAway.length;
-      arrAway.splice(this.index-1,1);
+      
+      
+      for(var e=0;e<arrAway.length;e++)
+      {
+        if(arrAway[e].points == 2)
+        {
+          this.ind =e;
+          arrAway.splice(this.ind,1);
+          this.awayscore-=this.conve;
+        }
+      }
       console.log(arrAway);
       if(this.awayscore < 0){
         this.awayscore = 0;
