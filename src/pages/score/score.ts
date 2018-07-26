@@ -74,7 +74,7 @@ addNumber(number)
     }
    
   }
-  else{
+  else if(this.team==2){
     if(number==5)
     {
       this.awayscore+=this.trypoint;

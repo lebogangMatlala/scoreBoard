@@ -41,18 +41,18 @@ export class HomePage {
         message: 'Are these the correct detaile of the teams  '+home+' and '+away+'?',
         buttons: [
           {
+            text: 'No',
+            handler: () => {
+              this.navCtrl.setRoot(HomePage);
+            }
+          },
+          {
             text: 'Yes',
             handler: () => {
               let obj = new Scores(home,away);
               arrScore.push(obj)
               console.log(arrScore)
               this.navCtrl.setRoot(ScorePage);
-            }
-          },
-          {
-            text: 'No',
-            handler: () => {
-              this.navCtrl.setRoot(HomePage);
             }
           }
         ]
